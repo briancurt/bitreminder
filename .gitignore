@@ -89,6 +89,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+zappa_settings.json
+config.yaml
 
 # Spyder project settings
 .spyderproject
