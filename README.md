@@ -1,2 +1,2 @@
 # bitreminder
-Nothing yet.
+Soon to be written.
