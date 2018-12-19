@@ -22,16 +22,15 @@ def reminder():
     server_url = config["general"]["server_url"]
     default_title = "_Still waiting to be reviewed and addressed:_"
 
-
-    for project_name, this_project in config['projects'].items():
+    for project_name, this_project in config["projects"].items():
 
         attr = []
-        slack_channel = this_project['channel']
+        slack_channel = this_project["channel"]
         project_url = f"{server_url}/rest/api/1.0/projects?name={project_name}"
         r = requests.get(project_url, auth=(bb_user, bb_pass))
-        project_key = r.json()['values'][0]['key']
+        project_key = r.json()["values"][0]["key"]
 
-        for repo in this_project['repos']:
+        for repo in this_project["repos"]:
 
             repo_link = f"<{server_url}/projects/{project_key}/repos/{repo}/browse|{repo}/>"
             prs_endpoint = f"{server_url}/rest/api/1.0/projects/{project_key}/repos/{repo}/pull-requests?state=OPEN"
