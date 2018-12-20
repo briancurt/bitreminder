@@ -9,7 +9,7 @@ from slackclient import SlackClient
 
 slack_token = os.environ["SLACK_API_TOKEN"]
 sc = SlackClient(slack_token)
-config = yaml.load(open("config.yaml"))
+config = yaml.safe_load(open("config.yaml"))
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
