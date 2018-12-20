@@ -2,4 +2,6 @@ language: python
 python:
   - "3.6"
 script:
-  - bandit -ll *.py
+  - bandit -ll -ii *.py
+  - flake8 --max-line-length=120 *.py
+  - black *.py --line-length 120 --check --diff

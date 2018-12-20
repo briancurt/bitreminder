@@ -14,9 +14,11 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def reminder():
+def rcol():
+    return random.randint(0, 255)
 
-    rcol = lambda: random.randint(0, 255)
+
+def reminder():
     bb_user = os.environ["BITBUCKET_USER"]
     bb_pass = os.environ["BITBUCKET_PASS"]
     server_url = config["general"]["server_url"]

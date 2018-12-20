@@ -11,6 +11,7 @@ Click==7.0
 decorator==4.3.0
 docutils==0.14
 durationpy==0.5
+flake8==3.6.0
 future==0.16.0
 gitdb2==2.0.5
 GitPython==2.1.11
@@ -22,6 +23,7 @@ jedi==0.13.2
 jmespath==0.9.3
 kappa==0.6.0
 lambda-packages==0.20.0
+mccabe==0.6.1
 parso==0.3.1
 pbr==5.1.1
 pexpect==4.6.0
@@ -29,6 +31,8 @@ pickleshare==0.7.5
 placebo==0.8.2
 prompt-toolkit==2.0.7
 ptyprocess==0.6.0
+pycodestyle==2.4.0
+pyflakes==2.0.0
 Pygments==2.3.1
 python-dateutil==2.6.1
 python-slugify==1.2.4
