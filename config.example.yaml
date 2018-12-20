@@ -1,14 +1,16 @@
 ---
 general:
-  server_url: https://my-bitbucket.company.com
+  server_url: https://my-bitbucket.example.com
+
 projects:
   awesome-project: # <-- Bitbucket root project name.
     repos:         # <-- List of repositories under the project above to check.
       - some-repo
       - other-repo
       - really-cool-repo
-      - your-legacy-repo
+      - this-legacy-repo
     channel: C61YU9B0G # <-- Slack channel ID to send the report.
+
   another-project:
     repos:
       - foo
