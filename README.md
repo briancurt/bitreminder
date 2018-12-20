@@ -1,8 +1,13 @@
 # Bitreminder
-> Send your team scheduled Slack messages to inform about pending pull requests in the [Bitbucket Server](https://bitbucket.org/product/enterprise) projects you care about. Run it locally or on [AWS Lambda](https://aws.amazon.com/lambda/) with [Zappa](https://github.com/Miserlou/Zappa)!
+
+[![Build Status](https://travis-ci.org/briancurt/bitreminder.svg?branch=master)](https://travis-ci.org/briancurt/bitreminder)
+
+> Send your team scheduled Slack messages to inform about pending pull requests in the [Bitbucket Server](https://bitbucket.org/product/enterprise) projects they care about. Run it locally or on [AWS Lambda](https://aws.amazon.com/lambda/) with [Zappa](https://github.com/Miserlou/Zappa)!
+
 
 
 ![](images/screenshot_1.png)
+
 
 ## Installation
 
