@@ -22,7 +22,7 @@ def reminder():
     bb_user = os.environ["BITBUCKET_USER"]
     bb_pass = os.environ["BITBUCKET_PASS"]
     server_url = config["general"]["server_url"]
-    default_title = "_Still waiting to be reviewed and addressed:_"
+    default_title = str(config["general"]["default_title"])
 
     for project_name, this_project in config["projects"].items():
 
