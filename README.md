@@ -9,13 +9,14 @@
 ![](images/screenshot_1.png)
 
 
+
 ## Installation
 
 #### Pre-requisites
 
-- Slack Bot user API token (`xoxb-...`). If you don't have one yet, read how to [here](https://api.slack.com/bot-users). 
+- Slack Bot user API token (`xoxb-...`). If you don't have one yet, read how to get one [here](https://api.slack.com/bot-users). 
 - Bitbucket Server username and password.
-- Your AWS credentials properly configured (Only for [Serverless deployment](#serverless-deployment))
+- Your AWS credentials properly configured (only required for [Serverless deployment](#serverless-deployment))
 - Python 3.6 or above.
 
 #### Quick start
@@ -44,11 +45,11 @@ python -c "import scheduled; scheduled.reminder()"
 
 ```
 
-You can choose to run it manually on-demand, or even set it up as a cron job, if that works for you. However, for a more serious set up I recommend deploying it as a _serverless_ application: 
+You can choose to run it manually on-demand as shown above, or even set it up as a cron job, if that works for you. However, for a more serious set up I recommend deploying it as a _serverless_ application: 
 
 #### Serverless deployment
 
-It's really simple thanks to the awesome [Zappa](https://github.com/Miserlou/Zappa) project. You will simply have to create a virtualenv and tune up `zappa_settings.json` to your taste. Step by step:
+It's really simple thanks to the awesome [Zappa](https://github.com/Miserlou/Zappa) project. You will only have to create a virtualenv and tune up `zappa_settings.json` to your taste. Step by step, that would be:
 
 ```bash
 # Clone the project
@@ -81,3 +82,11 @@ venv/bin/zappa deploy event
 
 ```
 
+
+
+## To do
+
+- [x] Add some static code checks
+- [ ] Get Slack's channel ID from a given channel name
+- [ ] Try out Atlassian's Bitbucket client instead of requests
+- [ ] Improve message formatting
