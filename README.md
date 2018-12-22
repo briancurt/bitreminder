@@ -14,10 +14,10 @@
 
 #### Pre-requisites
 
-- Slack Bot user API token (`xoxb-...`). If you don't have one yet, read how to get one [here](https://api.slack.com/bot-users). 
-- Bitbucket Server username and password.
+- Slack Bot user API token (`xoxb-...`). If you don't have one yet, read how to get one [here](https://api.slack.com/bot-users)
+- Username and password on your self-hosted Bitbucket Server (formerly known as Atlassian Stash)
 - Your AWS credentials properly configured (only required for [Serverless deployment](#serverless-deployment))
-- Python 3.6 or above.
+- Python 3.6 or above
 
 #### Quick start
 
