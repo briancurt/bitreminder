@@ -86,6 +86,12 @@ venv/bin/zappa deploy event
 
 
 
+## Development
+
+Just clone the repository and set up your virtual environment as shown above. You can then change whatever you want, and try it out running the function locally.
+
+
+
 ## To do
 
 - [x] Add some static code checks
