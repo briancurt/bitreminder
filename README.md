@@ -1,6 +1,8 @@
 # Bitreminder
 
 [![Build Status](https://travis-ci.org/briancurt/bitreminder.svg?branch=master)](https://travis-ci.org/briancurt/bitreminder)
+[![Maintainability](https://api.codeclimate.com/v1/badges/82c12744307eb68e952d/maintainability)](https://codeclimate.com/github/briancurt/bitreminder/maintainability)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/briancurt/bitreminder)
 
 > Send your team scheduled Slack messages to inform about pending pull requests in the [Bitbucket Server](https://bitbucket.org/product/enterprise) projects they care about. Run it locally or on [AWS Lambda](https://aws.amazon.com/lambda/) with [Zappa](https://github.com/Miserlou/Zappa)!
 
