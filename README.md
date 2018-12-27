@@ -89,6 +89,6 @@ venv/bin/zappa deploy event
 ## To do
 
 - [x] Add some static code checks
-- [ ] Get Slack's channel ID from a given channel name
+- [x] Get Slack's channel ID from a given channel name
 - [ ] Try out Atlassian's Bitbucket client instead of requests
 - [ ] Improve message formatting
