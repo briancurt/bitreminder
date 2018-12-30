@@ -66,7 +66,9 @@ def reminder():
                         + time_ago
                         + "_ | "
                         + pr["title"]
-                        + "\n"
+                        + ", by *"
+                        + pr["author"]["user"]["name"]
+                        + "*\n"
                     )
 
                 attr.append(
