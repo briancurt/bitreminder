@@ -58,18 +58,16 @@ def reminder():
                         time_ago = "Just created"
 
                     subtext += (
-                        "<"
-                        + pr["links"]["self"][0]["href"]
-                        + "|PR-"
-                        + str(pr["id"])
-                        + "> | _"
-                        + time_ago
-                        + "_ | "
-                        + pr["title"]
-                        + ", by *"
+                        "_*"
                         + pr["author"]["user"]["name"]
-                        + "*\n"
-                    )
+                        + "*, "
+                        + time_ago
+                        + "_ | <"
+                        + pr["links"]["self"][0]["href"]
+                        + "|"
+                        + pr["title"]
+                        + ">\n"
+                        )
 
                 attr.append(
                     {
