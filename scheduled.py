@@ -57,17 +57,11 @@ def reminder():
                     elif hours_ago <= 1:
                         time_ago = "Just created"
 
-                    subtext += (
-                        "_*"
-                        + pr["author"]["user"]["name"]
-                        + "*, "
-                        + time_ago
-                        + "_ | <"
-                        + pr["links"]["self"][0]["href"]
-                        + "|"
-                        + pr["title"]
-                        + ">\n"
-                        )
+                    author = pr["author"]["user"]["name"]
+                    pr_link = pr["links"]["self"][0]["href"]
+                    pr_title = pr["title"]
+
+                    subtext += f"_*{author}*, {time_ago}_ | " f"<{pr_link}|{pr_title}>\n"
 
                 attr.append(
                     {
