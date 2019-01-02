@@ -97,4 +97,4 @@ Just clone the repository and set up your virtual environment as shown above. Yo
 - [x] Add some static code checks
 - [x] Get Slack's channel ID from a given channel name
 - [ ] Try out Atlassian's Bitbucket client instead of requests
-- [ ] Improve message formatting
+- [x] Improve message formatting
