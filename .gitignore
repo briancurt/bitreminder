@@ -91,6 +91,7 @@ env.bak/
 venv.bak/
 zappa_settings.json
 config.yaml
+.DS_Store
 
 # Spyder project settings
 .spyderproject
